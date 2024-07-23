@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <script src="logic1.js"></script>
+    <link rel="stylesheet" href="design1.css" /> 
+  </head>
+  <body>
+    <div>
+      <!-- <input id = "text"/> -->
+      <input id="result" class="mb-2" type="text" />
+      <br />
+      
+        <button class="parentheses" onclick="setExpression('(')">(</button>
+        <button class="parentheses" onclick="setExpression(')')">)</button>
+        <button class="operator" onclick="setExpression('%')">%</button>
+        <button class="clear" onclick="clearAll()">AC</button> <br>
+        <button class="number" onclick="setExpression(1)">1</button>
+        <button class="number" onclick="setExpression(2)">2</button>
+        <button class="number" onclick="setExpression(3)">3</button>
+        <button class="operator" onclick="setExpression('+')">+</button> <br>
+        <button class="number" onclick="setExpression(4)">4</button>
+        <button class="number" onclick="setExpression(5)">5</button>
+        <button class="number" onclick="setExpression(6)">6</button>
+        <button class="operator" onclick="setExpression('-')">-</button> <br>
+        <button class="number" onclick="setExpression(7)">7</button>
+        <button class="number" onclick="setExpression(8)">8</button>
+        <button class="number" onclick="setExpression(9)">9</button>
+        <button class="operator" onclick="setExpression('*')">*</button> <br>
+        <button class="decimal" onclick="setExpression('.')">.</button>
+        <button class="operator" onclick="setExpression(0)">0</button>
+        <button class="equals" onclick="compute()">=</button>
+        <button class="operator" onclick="setExpression('/')">/</button>
+    </div>
+    
+  </body>
+</html>

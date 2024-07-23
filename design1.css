@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+input#result {
+    width: calc(100% - 30px);
+    height: 50px;
+    border: none;
+    background-color: #9cb7e0;
+    color: black;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 2rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(124, 204, 142, 0.1); /* Add a subtle box shadow */
+}
+div {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+button {
+    width: 60px;
+    height: 58px;
+    margin: 3px;
+    border-radius: 10px;
+    border: none;
+    background-color: #c5c6d0db;
+    font-size: 1.5rem;
+    color: #333;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+button.operator {
+    background-color: #deb46f;
+    color: black;
+}
+button.parentheses, button.decimal {
+    background-color: #deb46f;
+    color: black;
+}
+button.clear {
+    background-color: #d32f2f;
+    color: black;
+}
+button.equals {
+    background-color: #388e3c;
+    color: black;
+}
+button:active {
+    background-color: #485b5e;
+}
